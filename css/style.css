@@ -1,0 +1,122 @@
+* {
+    font-family: "Cairo", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: all .3s ease-in;
+}
+
+body {
+    background-color: #eee;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 991px) {
+    .container {
+        display: flex;
+        align-items: center;
+        gap: 100px;
+    }
+}
+
+.text {
+    width: 100%;
+    margin-bottom: 25px;
+    max-width: 300px;
+}
+.text h1 {
+    text-transform: capitalize;
+    color: #1a8ce7;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.text p {
+    font-size: 18px;
+    font-weight: 500;
+    
+}
+
+.form {
+    background-color: #fff;
+    padding: 10px;
+    width: 100%;
+    box-shadow: 1px 1px 5px 1px #c0bebe;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form input,
+a {
+    margin-bottom: 10px;
+}
+
+form input[type=text],
+form input[type=password] {
+    outline: none;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #dfdede;
+}
+
+form input[type=text]::placeholder,
+form input[type=password]::placeholder {
+    text-transform: capitalize;
+    font-size: 15px;
+
+}
+.log-in {
+    outline: none;
+    border: none;
+    background-color: #1a8ce7;
+    padding: 6px;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    cursor: pointer;  
+    text-transform: capitalize; 
+}
+
+a {
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+    text-transform: capitalize;
+    transition: all .3s ease-in;
+    border-bottom: 1px solid rgb(221, 218, 218);
+    padding-bottom: 10px;
+}
+
+a:hover {
+    color: #1a8ce7;
+}
+
+.last {
+    display: flex;
+    justify-content: center;
+}
+
+.create {
+    outline: none;
+    border: none;
+    text-align: center;
+    background-color: rgb(3, 160, 11);
+    width: fit-content;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 500;
+}
